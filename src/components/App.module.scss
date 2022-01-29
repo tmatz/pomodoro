@@ -2,8 +2,11 @@
   background-color: #282c34;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+  text-align: center;
+  min-height: 100vh;
+  padding: 20vh;
 
-button {
-  font-size: calc(10px + 2vmin);
+  button {
+    font-size: calc(10px + 2vmin);
+  }
 }
