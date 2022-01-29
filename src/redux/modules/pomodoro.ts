@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 type State = {
   isRunning: boolean;
@@ -21,7 +21,10 @@ export const slice = createSlice({
     resume(state) {
       state.isRunning = true;
     },
+    setTime(state, { payload }: PayloadAction<number>) {
+      state.time = payload;
+    },
   },
 });
 
-export const { start, pause, resume } = slice.actions;
+export const { start, pause, resume, setTime } = slice.actions;
